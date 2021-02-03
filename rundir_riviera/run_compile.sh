@@ -37,7 +37,6 @@
 ./run_riviera.sh clean
 
 # COMPILE
-./run_riviera.sh compile liblist lplib_basic
+./run_riviera.sh compile liblist lplib_util
 
 # COMPILE FOR VERIFICATION
-./run_riviera.sh compile liblist lplib_basic_verif -2008
