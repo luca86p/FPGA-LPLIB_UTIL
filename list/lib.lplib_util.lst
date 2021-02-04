@@ -1,10 +1,10 @@
-# -- lib.lplib_basic.lst
+# -- lib.lplib_util.lst
 # -- find ../hdl -type f
 
 
 # -- find ../hdl/pkg -type f
 # ------------------------------------------------------------------------------
 ../hdl/pkg/pkg_type.vhd
-#../hdl/pkg/pkg_const.vhd
+../hdl/pkg/pkg_const.vhd
 #../hdl/pkg/pkg_fun.vhd
 #../hdl/pkg/pkg_pro.vhd
