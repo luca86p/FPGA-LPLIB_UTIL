@@ -6,5 +6,5 @@
 # ------------------------------------------------------------------------------
 ../hdl/pkg/pkg_type.vhd
 ../hdl/pkg/pkg_const.vhd
-#../hdl/pkg/pkg_fun.vhd
-#../hdl/pkg/pkg_pro.vhd
+../hdl/pkg/pkg_fun.vhd
+../hdl/pkg/pkg_pro.vhd
