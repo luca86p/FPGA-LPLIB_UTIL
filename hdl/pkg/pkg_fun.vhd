@@ -4,7 +4,7 @@
 -- -----------------------------------------------------------------------------
 -- File          : pkg_fun.vhd
 -- Language      : VHDL-93
--- Module        : pkg_fun
+-- Module        : pkg_fun◙
 -- Library       : lplib_util
 -- -----------------------------------------------------------------------------
 -- Author(s)     : Luca Pilato <pilato[punto]lu[chiocciola]gmail[punto]com>
@@ -190,6 +190,10 @@ package pkg_fun is
     function num_of_ones(v : in std_logic_vector) return natural;
     -- Returns the number of 1s in a vector
 
+    function dec_to_gray(v : std_logic_vector) return std_logic_vector;
+    -- converts the unsigned representation of v in the correspondent gray code 
+    -- can be used as combinational logics
+    -- v xor (v >> 1)
 
 
     -- *************************************************************************
@@ -771,6 +775,14 @@ package body pkg_fun is
         end loop;
         return result;
     end num_of_ones;
+
+
+    function dec_to_gray(v : std_logic_vector) return std_logic_vector is
+        variable result : std_logic_vector(v'range);
+    begin
+        result := v xor ('0' & v(v'high downto 1));
+        return result;
+    end dec_to_gray;
 
 
 
