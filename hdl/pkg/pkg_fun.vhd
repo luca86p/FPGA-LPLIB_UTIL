@@ -4,7 +4,7 @@
 -- -----------------------------------------------------------------------------
 -- File          : pkg_fun.vhd
 -- Language      : VHDL-93
--- Module        : pkg_fun◙
+-- Module        : pkg_fun
 -- Library       : lplib_util
 -- -----------------------------------------------------------------------------
 -- Author(s)     : Luca Pilato <pilato[punto]lu[chiocciola]gmail[punto]com>
